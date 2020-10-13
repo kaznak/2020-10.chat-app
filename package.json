@@ -1,0 +1,10 @@
+{
+  "name": "chat-app",
+  "version": "0.0.0",
+  "description": "Yet another chat app",
+  "main": "index.js",
+  "repository": "url",
+  "author": "kaznak <kaznak.at.work@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
