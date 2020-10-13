@@ -10,7 +10,7 @@
   "scripts": {
     "format": "prettier --write **/*.{json,ts}",
     "lint": "eslint --ext ts .",
-    "build": "tsc",
+    "build": "tsc --outDir dist",
     "clean": "rimraf dist"
   },
   "dependencies": {
