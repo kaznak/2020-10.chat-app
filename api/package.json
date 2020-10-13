@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "format": "prettier --write **/*.json",
+    "format": "prettier --write **/*.{json,ts}",
+    "lint": "eslint --ext ts .",
     "build": "tsc",
     "clean": "rimraf dist"
   },
