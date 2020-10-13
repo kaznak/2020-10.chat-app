@@ -1,0 +1,10 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "description": "API server of chat app",
+  "main": "index.js",
+  "repository": "url",
+  "author": "kaznak <kaznak.at.work@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
