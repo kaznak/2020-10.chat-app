@@ -8,9 +8,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "format": "prettier --write **/*.{json,ts}",
+    "format": "prettier --write **.{json,ts}",
     "lint": "eslint --ext ts .",
-    "build": "tsc --outDir dist",
+    "build": "tsc --outDir dist src/**.ts",
     "clean": "rimraf dist"
   },
   "dependencies": {
