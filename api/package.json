@@ -15,6 +15,7 @@
     "lint": "eslint --ext ts .",
     "build": "tsc",
     "start": "node -r ts-node/register ./src/app.ts",
+    "start:watch": "nodemon",
     "clean": "rimraf dist"
   },
   "dependencies": {
@@ -50,5 +51,18 @@
       "prettier",
       "prettier/@typescript-eslint"
     ]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm start",
+    "ext": "ts"
   }
 }
