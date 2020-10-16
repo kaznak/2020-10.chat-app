@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "API server of chat app",
   "main": "dist/app.js",
-  "repository": "url",
+  "repository": "https://github.com/kaznak/2020-10.chat-app/tree/main/api",
   "author": "kaznak <kaznak.at.work@gmail.com>",
   "license": "MIT",
   "private": true,
