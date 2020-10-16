@@ -24,5 +24,3 @@
   - supertest, @types/supertest
 - run server with nodemon
   - nodemon
-- ???
-  -
