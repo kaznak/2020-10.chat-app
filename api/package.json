@@ -15,7 +15,7 @@
     "lint": "eslint --ext json --ext js --ext ts .",
     "type-check": "tsc --pretty --noEmit",
     "test": "jest",
-    "build": "tsc",
+    "build": "tsc --sourceMap --outDir ./dist src/**.ts",
     "start": "node -r ts-node/register ./src/app.ts",
     "start:watch": "nodemon",
     "clean": "rimraf dist",
