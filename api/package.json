@@ -11,8 +11,8 @@
     "node": "^12.18.4"
   },
   "scripts": {
-    "format": "prettier --write **.{json,ts}",
-    "lint": "eslint --ext ts --ext js .",
+    "format": "prettier --write **.{md,json,js,ts}",
+    "lint": "eslint --ext json --ext js --ext ts .",
     "type-check": "tsc --pretty --noEmit",
     "test": "jest",
     "build": "tsc",
