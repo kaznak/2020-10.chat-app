@@ -18,7 +18,8 @@
     "build": "tsc",
     "start": "node -r ts-node/register ./src/app.ts",
     "start:watch": "nodemon",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
