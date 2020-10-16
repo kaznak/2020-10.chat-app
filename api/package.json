@@ -55,6 +55,10 @@
       "prettier/@typescript-eslint"
     ]
   },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
   "nodemonConfig": {
     "ignore": [
       "**/*.test.ts",
