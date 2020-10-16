@@ -13,6 +13,7 @@
   "scripts": {
     "format": "prettier --write **.{json,ts}",
     "lint": "eslint --ext ts .",
+    "test": "jest",
     "build": "tsc",
     "start": "node -r ts-node/register ./src/app.ts",
     "start:watch": "nodemon",
