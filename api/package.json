@@ -12,7 +12,8 @@
   },
   "scripts": {
     "format": "prettier --write **.{json,ts}",
-    "lint": "eslint --ext ts .",
+    "lint": "eslint --ext ts --ext js .",
+    "type-check": "tsc --pretty --noEmit",
     "test": "jest",
     "build": "tsc",
     "start": "node -r ts-node/register ./src/app.ts",
@@ -63,6 +64,17 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.ts": "tsc --pretty --noEmit",
+    "*.(json|js|ts)": "eslint",
+    "*.(json|js|ts|md)": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint && npm run type-check && npm run test"
+    }
   },
   "nodemonConfig": {
     "ignore": [
