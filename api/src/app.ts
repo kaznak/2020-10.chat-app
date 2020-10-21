@@ -65,7 +65,7 @@ if (require.main === module) {
   })
   createServer(helloWorld).listen(port, host, () => {
     logger.info({
-      message: `Server running at http://${host}:${port}/`,
+      message: `${process.env.NODE_ENV} server running at http://${host}:${port}/`,
     })
   })
 } else {
