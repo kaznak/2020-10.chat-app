@@ -11,9 +11,9 @@
     "node": "^12.18.4"
   },
   "scripts": {
-    "format": "prettier --write **.{md,json,js,ts}",
+    "format": "prettier --write **/*.{md,json,js,ts}",
     "lint": "eslint --ext json --ext js --ext ts .",
-    "type-check": "tsc --pretty --noEmit src/**.ts",
+    "type-check": "tsc --pretty --noEmit",
     "test": "jest",
     "build": "tsc --sourceMap --outDir ./dist src/**.ts",
     "start": "node -r ts-node/register ./src/app.ts",
